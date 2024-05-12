@@ -10,7 +10,7 @@ document.getElementById('enterText').addEventListener('click', function() {
     // Nascondi il testo "Click to enter"
     this.style.display = 'none';
 
-    // Nomi delle immagini di sfondo (esempio)
+    // Nomi delle immagini di sfondo presenti direttamente nel root
     const imageNames = ['background_1.jpg', 'background_2.jpg', 'background_3.png', 'background_4.png'];
 
     // Genera un URL casuale per l'immagine di sfondo
