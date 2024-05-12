@@ -13,9 +13,6 @@ document.getElementById('enterText').addEventListener('click', function() {
     // Nomi delle immagini di sfondo (esempio)
     const imageNames = ['background_1.jpg', 'background_2.jpg', 'background_3.png', 'background_4.png'];
 
-    // Cartella contenente le immagini di sfondo (esempio)
-    const folderPath = 'img/';
-
     // Genera un URL casuale per l'immagine di sfondo
     const randomIndex = Math.floor(Math.random() * imageNames.length);
     const randomImageName = imageNames[randomIndex];
