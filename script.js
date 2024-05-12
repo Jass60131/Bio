@@ -16,7 +16,7 @@ document.getElementById('enterText').addEventListener('click', function() {
     // Genera un URL casuale per l'immagine di sfondo
     const randomIndex = Math.floor(Math.random() * imageNames.length);
     const randomImageName = imageNames[randomIndex];
-    const randomImageUrl = folderPath + randomImageName;
+    const randomImageUrl = randomImageName; // URL diretto alla radice del progetto
 
     // Imposta l'immagine di sfondo
     document.body.style.backgroundImage = `url('${randomImageUrl}')`;
