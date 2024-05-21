@@ -55,20 +55,23 @@ h1#enterText {
 }
 .avatar-container {
     position: relative;
-    top: -60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .avatar-image {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #ffffff;
+    object-position: center;
 }
+
 
 
 
