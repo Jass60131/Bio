@@ -60,19 +60,16 @@ h1#enterText {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    width: 120px; /* Stessa larghezza e altezza dell'avatar-image */
-    height: 120px;
-    border-radius: 50%; /* Rende il container rotondo */
-    background-color: #ffffff; /* Sfondo bianco */
 }
 
 .avatar-image {
-    width: 100%; /* Rende l'immagine riempire completamente il container rotondo */
-    height: 100%;
-    border-radius: 50%; /* Mantiene anche l'immagine rotonda */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffffff;
 }
+
 
 
 .username {
