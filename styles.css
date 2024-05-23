@@ -103,3 +103,31 @@ h1#enterText:hover {
 .social-icon:hover {
     filter: brightness(150%) drop-shadow(0 0 5px #fff);
 }
+
+
+.review-box {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.review-box:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.review-box .arrow {
+    display: inline-block;
+    margin-left: 10px;
+    transition: margin-left 0.3s;
+}
+
+.review-box:hover .arrow {
+    margin-left: 20px;
+}
+
