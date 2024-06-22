@@ -11,7 +11,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
+        /* Non è necessario ripetere il meta charset e viewport qui */
+        /* Sezione per il CSS aggiuntivo può essere aggiunta qui */
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fullTitle = "Jas60131 x Dugongo"; // Nota la correzione di "Jas" con la maiuscola iniziale
+            let currentIndex = 0;
+
+            setInterval(() => {
+                document.title = fullTitle.substring(0, currentIndex);
+                currentIndex++;
+
+                if (currentIndex > fullTitle.length) {
+                    currentIndex = 1; // Riavvia l'effetto di scrittura
+                }
+            }, 300); // Cambia ogni 300 millisecondi (più veloce per un effetto di scrittura più fluido)
+        });
+    </script>
 </head>
 <body>
     <div class="splash-container" id="splashContainer">
