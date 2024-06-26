@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
@@ -179,6 +185,7 @@ h1#enterText:hover {
     border: 1px solid #8a5eb8;
     margin-top: 20px;
 }
+
 .track-info {
     display: flex;
     align-items: center;
@@ -186,14 +193,14 @@ h1#enterText:hover {
 }
 
 .track-image {
-    width: 100px; 
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .track-text {
-    font-size: 1.2em; 
-    text-align: left; 
+    font-size: 1.2em;
+    text-align: left;
     margin-left: 10px;
 }
