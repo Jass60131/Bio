@@ -18,7 +18,8 @@ body {
     max-width: 800px;
     width: 90%;
     margin: 20px auto 40px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     border: 1px solid #8a5eb8;
 }
 
@@ -49,6 +50,7 @@ h1#enterText:hover {
     border-radius: 10px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     padding: 20px;
     max-width: 800px;
     width: 100%;
@@ -125,7 +127,7 @@ h1#enterText:hover {
 }
 
 .content-box {
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.8);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -141,7 +143,7 @@ h1#enterText:hover {
 }
 
 .content-box:hover {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
 }
 
 .content-title {
@@ -150,60 +152,66 @@ h1#enterText:hover {
 }
 
 .review-box {
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.8);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
     border: 1px solid #8a5eb8;
 }
 
 .review-box:hover {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.arrow {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
 }
 
 .music-player {
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.8);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid #8a5eb8;
+    margin-top: 20px;
 }
 
 .track-info {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
 }
 
 .controls {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
 }
 
 .play-pause, .next {
-    background-color: transparent;
+    background-color: #1c1c1c;
     border: none;
     color: #fff;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.play-pause:hover, .next:hover {
+    background-color: #000;
 }
 
 .time {
-    font-size: 14px;
-    color: #b3b3b3;
+    color: #fff;
 }
 
 .progress-bar {
     width: 100px;
-    -webkit-appearance: none;
-    height: 4px;
-    background: #8a5eb8;
-    outline: none;
-    border-radius: 2px;
     cursor: pointer;
 }

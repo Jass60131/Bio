@@ -67,10 +67,6 @@
                     </div>
                 </div>
                 <div class="content-boxes">
-                    <div class="content-box" onclick="window.open('https://youtube.com/', '_blank')">
-                        <img src="youtube.png" alt="YouTube">
-                        <div class="content-title">My YouTube</div>
-                    </div>
                     <div class="content-box" onclick="window.open('https://www.last.fm/it/user/jass787', '_blank')">
                         <img src="spotify.png" alt="Spotify">
                         <div class="content-title">My Spotify Stats</div>
@@ -81,13 +77,11 @@
                     <span class="arrow">→</span>
                 </div>
                 <div class="music-player">
-                    <div class="track-info">Damn Right</div>
+                    <div id="current-song" class="track-info">Loading...</div>
                     <div class="controls">
-                        <button class="play-pause">▶️</button>
-                        <span class="time">00:07</span>
-                        <input type="range" value="7" max="228" class="progress-bar">
-                        <span class="time">03:48</span>
-                        <button class="next">⏭️</button>
+                        <span id="current-time" class="time"></span>
+                        <input type="range" value="0" max="100" class="progress-bar">
+                        <span id="total-time" class="time"></span>
                     </div>
                 </div>
             </div>
