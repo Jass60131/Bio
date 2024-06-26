@@ -10,9 +10,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <style>
-     
-    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const fullTitle = "Jas60131 x Dugongo";
@@ -26,6 +23,20 @@
                     currentIndex = 1; // Riavvia l'effetto di scrittura
                 }
             }, 300);
+
+            document.getElementById('enterText').addEventListener('click', function() {
+                document.getElementById('contentToReveal').style.display = 'block';
+                this.style.display = 'none';
+
+                const imageNames = ['background_1.jpg', 'background_2.jpg', 'background_3.png', 'background_4.png'];
+                const randomIndex = Math.floor(Math.random() * imageNames.length);
+                const randomImageName = imageNames[randomIndex];
+                const randomImageUrl = randomImageName;
+
+                document.body.style.backgroundImage = `url('${randomImageUrl}')`;
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundRepeat = 'no-repeat';
+            });
         });
     </script>
 </head>
@@ -61,7 +72,5 @@
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
