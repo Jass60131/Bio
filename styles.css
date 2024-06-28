@@ -18,12 +18,12 @@ body {
 
 .splash-container {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     width: 90%;
-    margin: 10px auto 20px;
+    margin: 20px auto 40px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid #8a5eb8;
@@ -32,10 +32,10 @@ body {
 h1#enterText {
     cursor: pointer;
     background-color: #1c1c1c;
-    padding: 12px;
+    padding: 15px;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: background-color 0.3s ease;
@@ -57,10 +57,10 @@ h1#enterText:hover {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
-    padding: 10px;
+    padding: 20px;
     max-width: 800px;
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
     border: 1px solid #8a5eb8;
 }
 
@@ -72,7 +72,7 @@ h1#enterText:hover {
 
 .profile-section {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .avatar-container {
@@ -80,8 +80,8 @@ h1#enterText:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -97,28 +97,28 @@ h1#enterText:hover {
 }
 
 .username {
-    font-size: 14px;
+    font-size: 28px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 10px 0;
     color: #8a5eb8;
 }
 
 .user-info {
-    font-size: 12px;
+    font-size: 16px;
     color: #b3b3b3;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 7px;
-    margin-bottom: 15px;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     transition: filter 0.3s ease-in-out;
     border-radius: 50%;
 }
@@ -130,25 +130,25 @@ h1#enterText:hover {
 .content-boxes {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .content-box {
     background-color: rgba(28, 28, 28, 0.8);
-    padding: 7px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
     flex-basis: 45%;
     border: 1px solid #8a5eb8;
-    margin: 5px;
+    margin: 10px;
 }
 
 .content-box img {
-    width: 20px;
-    margin-bottom: 5px;
+    width: 40px;
+    margin-bottom: 10px;
 }
 
 .content-box:hover {
@@ -156,13 +156,13 @@ h1#enterText:hover {
 }
 
 .content-title {
-    font-size: 8px;
+    font-size: 16px;
     color: #fff;
 }
 
 .review-box {
     background-color: rgba(28, 28, 28, 0.8);
-    padding: 7px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
@@ -175,47 +175,47 @@ h1#enterText:hover {
 }
 
 .arrow {
-    font-size: 9px;
+    font-size: 18px;
     color: #fff;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .music-player {
     background-color: rgba(28, 28, 28, 0.8);
-    padding: 7px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid #8a5eb8;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .track-info {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .track-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .track-text {
-    font-size: 0.6em;
+    font-size: 1.2em;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container, .splash-container {
-        padding: 20px;
+        padding: 15px;
     }
 
     h1#enterText {
         font-size: 20px;
-        padding: 20px;
+        padding: 15px;
     }
 
     .username {
@@ -231,12 +231,13 @@ h1#enterText:hover {
     }
 
     .social-icon {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .content-box {
-        flex-basis: 100%;
+        flex-basis: 45%;
+        margin: 10px;
     }
 
     .track-image {
@@ -249,7 +250,7 @@ h1#enterText:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .container, .splash-container {
         padding: 15px;
     }
@@ -272,8 +273,8 @@ h1#enterText:hover {
     }
 
     .social-icon {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     .content-box {
@@ -287,5 +288,46 @@ h1#enterText:hover {
 
     .track-text {
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .splash-container {
+        padding: 10px;
+    }
+
+    h1#enterText {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .username {
+        font-size: 18px;
+    }
+
+    .user-info {
+        font-size: 10px;
+    }
+
+    .social-icons {
+        gap: 5px;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-box {
+        flex-basis: 100%;
+    }
+
+    .track-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .track-text {
+        font-size: 0.8em;
     }
 }
