@@ -130,6 +130,7 @@ h1#enterText:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .content-box {
@@ -141,6 +142,7 @@ h1#enterText:hover {
     transition: background-color 0.3s ease;
     flex-basis: 45%;
     border: 1px solid #8a5eb8;
+    margin: 10px;
 }
 
 .content-box img {
@@ -203,4 +205,87 @@ h1#enterText:hover {
     font-size: 1.2em;
     text-align: left;
     margin-left: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container, .splash-container {
+        padding: 20px;
+    }
+
+    h1#enterText {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .username {
+        font-size: 24px;
+    }
+
+    .user-info {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .content-box {
+        flex-basis: 100%;
+    }
+
+    .track-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .track-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .splash-container {
+        padding: 15px;
+    }
+
+    h1#enterText {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .username {
+        font-size: 20px;
+    }
+
+    .user-info {
+        font-size: 12px;
+    }
+
+    .social-icons {
+        gap: 8px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content-box {
+        flex-basis: 100%;
+    }
+
+    .track-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .track-text {
+        font-size: 0.9em;
+    }
 }
